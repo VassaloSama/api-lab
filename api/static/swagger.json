@@ -67,7 +67,7 @@
         "description": "Acessa uma rota protegida. Requer token JWT.",
         "security": [
           {
-            "Bearer": []
+            "BearerAuth": []
           }
         ],
         "responses": {
@@ -85,11 +85,11 @@
     }
   },
   "securityDefinitions": {
-    "Bearer": {
+    "BearerAuth": {
       "type": "apiKey",
       "name": "Authorization",
       "in": "header",
-      "description": "Token JWT a ser informado no formato: Bearer {token}"
+      "description": "Informe o token JWT no formato: **Bearer {seu_token}**"
     }
   }
 }
